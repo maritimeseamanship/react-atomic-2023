@@ -1,7 +1,8 @@
+
+
 .char{
+    margin: 20px;
     border: 1px solid gold;
     width: 40vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    text-align: center;
 }
