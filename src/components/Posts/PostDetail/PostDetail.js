@@ -1,9 +1,14 @@
 import React from 'react';
 
-const PostDetail = () => {
+
+const PostDetail = ({post}) => {
+    const {id, userId, title, body} = post;
     return (
-        <div className="App">
-            <Posts/>
+        <div>
+            <div>id: {id}</div>
+                <div>userId: {userId}</div>
+                    <div>title: {title}</div>
+                        <div>body: {body}</div>
         </div>
     );
 };
