@@ -8,7 +8,7 @@ const Post = ({post}) => {
     const{id, title} = post;
     return (
         <div>
-            <div> id: {id}</div>
+            <div className={'wrapper'}> id: {id}</div>
             <div> title: {title}</div>
             <button onClick={()=>setIsShow(prev =>!prev)}>{isShow?'Hide':'Show'}</button>
             {
