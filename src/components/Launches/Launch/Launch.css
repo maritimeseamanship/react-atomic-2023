@@ -1,0 +1,26 @@
+.missionStyle{
+    background-color: darkgrey;
+    width: 38vw;
+    height: 48vh;
+    align-items: center;
+}
+
+.textStyle{
+    align-items: center;
+}
+
+.nameStyle{
+    text-align: center;
+    margin-top: 10px;
+}
+.launchStyle{
+    text-align: center;
+
+}
+
+.imageStyle{
+    margin-top: 10px;
+    position: absolute;
+    margin-left: 10%;
+
+}
