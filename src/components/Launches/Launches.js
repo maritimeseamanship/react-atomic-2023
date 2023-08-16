@@ -1,6 +1,7 @@
 import React from 'react';
 import {useState,useEffect} from 'react';
 import {Launch} from './Launch/Launch';
+
 const Launches = () => {
     const [launches, setLaunches] = useState([]);
     useEffect(() => {
@@ -10,10 +11,10 @@ const Launches = () => {
         })
     })
     return (
-        <div >
+        <div>
             {launches.map(launch  => <Launch key={launch.launch_date_unix} launch={launch}/>)}
         </div>
     );
 };
 
-export  {Launches};
+export {Launches};
