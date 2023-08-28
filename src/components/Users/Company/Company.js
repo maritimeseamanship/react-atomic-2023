@@ -1,8 +1,10 @@
-const Company = () => {
-
+const Company = ({company}) => {
+    const {name, catchPhrase} = company;
     return(
         <div>
-            Company
+            <div>COMPANY:</div>
+            <div>name: {name}</div>
+                <div>catchPhrase: {catchPhrase} </div>
         </div>
     );
 };
