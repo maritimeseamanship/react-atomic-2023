@@ -1,11 +1,18 @@
-import './App.css';
+
+import {UserContainer} from "./components/UserContainer/UserContainer";
+import {Posts} from "./components/Posts/Posts";
+import {useState} from "react";
 
 const App = () => {
-  return (
-    <div className="App">
+  const [userId, setUserId]  = useState([]);
 
+  return (
+    <div >
+             <UserContainer setUserId={setUserId}/>
+      <hr/>
+      {userId && <Posts userId={userId}/>}
     </div>
   );
 };
 
-export default App;
+export {App};
