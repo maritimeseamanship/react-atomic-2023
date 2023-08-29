@@ -7,7 +7,7 @@ const Posts = ({userId}) => {
             .then(value => value.json())
             .then(post => setPosts(post))
     },
-    );
+        [userId]);
     return (
         <div >
             {posts.map(post =><Post key={post.id} post={post}/>)}
