@@ -1,6 +1,6 @@
 import {Car} from "../Car/Car";
 import {useEffect, useState} from "react";
-const Cars = ({onSave}) => {
+const Cars = ({onSave, setOnSave,setCarForUpdate}) => {
     const [cars, setCars] = useState([]);
     useEffect(() =>{
         fetch('http://owu.linkpc.net/carsAPI/v1/cars')
@@ -9,7 +9,7 @@ const Cars = ({onSave}) => {
     }, [onSave])
     return (
         <div>
-            {cars.map(car =><Car key={car.id} car={car}/>)}
+            {cars.map(car =><Car key={car.id} car={car} setOnSave={setOnSave} setCarForUpdate={setCarForUpdate}/>)}
         </div>
     );
 };
