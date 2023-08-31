@@ -67,7 +67,7 @@ const CarForm = ({setOnSave,carForUpdate,setCarForUpdate}) => {
                      /*   min:{value:1990, message: 'year must be gte 1990'},
                         max: {value: new Date().getFullYear(), message: `year must be lte ${new Date().getFullYear()}`}*/
                     })}/> </label>
-                    <button disabled={!isValid}>Save</button>
+                    <button disabled={!isValid}>{!carForUpdate?'Save':'Update'}</button>
                 </form>
             </div>
         )
