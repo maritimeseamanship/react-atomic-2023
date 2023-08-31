@@ -56,14 +56,14 @@ const CarForm = ({setOnSave,carForUpdate,setCarForUpdate}) => {
                             required: true
                         })}/> </label>
                     <label><input type="text" placeholder={'price'} {...register('price', {
-                        valueAsNumber: true,
+                        valueAsNumber: true
                        /* required: true,
                         min: {value:0, message: 'price must be gte 0'},
                         max: {value: 1000000, message: 'price must be lte 1000000'}*/
                     })}/> </label>
                     <label><input type="text" placeholder={'year'} {...register('year', {
                         valueAsNumber: true,
-                        required: true,
+                        required: true
                      /*   min:{value:1990, message: 'year must be gte 1990'},
                         max: {value: new Date().getFullYear(), message: `year must be lte ${new Date().getFullYear()}`}*/
                     })}/> </label>
