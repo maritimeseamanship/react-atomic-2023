@@ -34,7 +34,7 @@ const CarForm = ({setOnSave,carForUpdate,setCarForUpdate}) => {
             })
             .catch(e => {
                 console.log(e)
-            })
+            })}
         const update = (car) => {
             fetch(`http://owu.linkpc.net/carsAPI/v1/cars/${carForUpdate.id}`, {
                 headers: {'content-type': 'application/json'},
@@ -67,11 +67,10 @@ const CarForm = ({setOnSave,carForUpdate,setCarForUpdate}) => {
                      /*   min:{value:1990, message: 'year must be gte 1990'},
                         max: {value: new Date().getFullYear(), message: `year must be lte ${new Date().getFullYear()}`}*/
                     })}/> </label>
-                    <button disabled={!isValid}>{!carForUpdate?'Save':'Update'}</button>
+                    <button disabled={!isValid}>Save</button>
                 </form>
             </div>
         )
-    }
 }
  /*const CarForm = ({setOnSave}) => {
     const initialState= {
