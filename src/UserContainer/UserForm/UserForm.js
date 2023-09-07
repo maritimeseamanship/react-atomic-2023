@@ -6,7 +6,7 @@ import {Context} from "../UserContainer";
 
 
 const UserForm = () => {
-  const [errors, setErrors] = useState[null]
+  const [errors, setErrors] = useState(null)
   const {reset, register, handleSubmit} = useForm();
     const {setTrigger} = useContext(Context)
   const save = async(user) => {
